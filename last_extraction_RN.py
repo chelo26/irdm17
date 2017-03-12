@@ -87,8 +87,6 @@ def get_pairs_features(dictio_quid_featsRank):
 
 
 # Putting in the good format for tensorflow:
-
-
 def separate(data):
     Xi = []
     Xj = []
@@ -122,7 +120,8 @@ if __name__ == '__main__':
     training_data = get_pairs_features(dictio_quid)
 
     # Sampling:
-    sampled_data = sampling_data(training_data,)
+    batch_size=500000
+    sampled_data = sampling_data(training_data,batch_size)
 
     # Separating into array to put in tensorflow
     Xi, Xj, P_target = separate(data)
