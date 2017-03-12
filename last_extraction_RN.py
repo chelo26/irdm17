@@ -60,7 +60,7 @@ def make_dictionary(features,ranks,queries):
 # Given a query ID, we separate on: [Xi,Xj,P_true] where P_true is either 0,0.5 or 1
 def get_pairs_features(dictio_quid_featsRank):
     data = []
-    #k = 0
+    k = 0
     for key in dictio_quid_featsRank.keys():
         # Temporary list of features,rank
         temp_list = dictio_quid_featsRank[key]
@@ -80,8 +80,8 @@ def get_pairs_features(dictio_quid_featsRank):
                     data.append((X1, X2, int(1)))
                 else:
                     data.append((X1, X2, int(0)))
-        #k += 1
-        #if k % 100 == 0:
+        k += 1
+        if k % 100 == 0:
             print "number of keys transformed: %d finished" % int(k)
     return data
 
