@@ -8,7 +8,9 @@ We use this code to generate the report for this project.
 
 - Evaluation_ERR_NDCG_FINAL.ipynb -> Evaluates the resulting scores from Lemur calculates the NDCG@10 and the ERR@10.
 
-
+- IRDM_CW_TF_LogReg -> Code for the TensorFlow Implementation of Logistic Regression and for its evaluation using ERR and NDCG
+- MeshGrid -> Code for tuning the parameters of the LEMUR models.
+- Confusion_matrix.ipynb -> Code for analysing results.
 
 
 
