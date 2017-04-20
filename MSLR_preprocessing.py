@@ -58,7 +58,6 @@ def normalise_feats(data_sub):
 
 def generate_pairs(data_sub):
     # Generate pairs of non-matching relievence. Higher relevence 1st, lower 2nd
-    
     pair_sets= []
     for i in data_sub:
         for j in data_sub:
@@ -86,7 +85,12 @@ def generate_pairs_opp(data_sub):
 #data_subset = filter_for_qid(data_load, '166')
 #data_sub_pairs = generate_pairs(data_subset)
 
+if __name__=="__main__":
 
+    # Using the to import:
+    data_dir="/Users/Chelo/Documents/UCL/Term2/IRDM/irdm_project/MSLR-WEB10K/Fold1/"
+    data_name="train.txt"
+    MSLR_load_format(data_dir, data_name)
 
 
 
